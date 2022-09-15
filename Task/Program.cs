@@ -24,11 +24,7 @@ void PrintArray(string[] col) //void значит не возвращает зн
         Console.Write($"{col[index]}, "); //для красивого вывода
         index++;
     }
-    while (index > length - 2 && index < length) // для красивого вывода
-    {
-        Console.Write($"{col[index]}");
-        break;
-    }
+    Console.Write(col[length-1]); // для красивого вывода
     Console.Write("]"); // для красивого вывода
 }
 
